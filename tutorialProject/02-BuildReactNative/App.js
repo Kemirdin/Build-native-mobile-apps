@@ -1,18 +1,5 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, {
-    Component
-} from 'react';
-import {
-    Platform,
-    StyleSheet,
-    Text,
-    View
-} from 'react-native';
+import React, {Component} from 'react';
+import {Platform,StyleSheet,Text,View} from 'react-native';
 
 const instructions = Platform.select({
     ios: 'CCCCCC...Hello world !. Press Cmd+R to reload,\n' +
@@ -23,29 +10,18 @@ const instructions = Platform.select({
 
 export default class App extends Component < {} > {
     render() {
-        return ( <
-            View style = {
-                styles.container
-            } >
-            <
-            Text style = {
-                styles.welcome
-            } >
+        return (<View style = {styles.container} >
+            <Text style = {styles.welcome} >
             Welcome to React Native!
-            <
-            /Text> <
-            Text style = {
-                styles.instructions
-            } >
-            To get started, edit App.js <
-            /Text> <
-            Text style = {
+            </Text>
+            <Text style={ styles.instructions} >
+                To get started, edit App.js </Text>
+            <Text style = {
                 styles.instructions
             } > {
                 instructions
-            } <
-            /Text> <
-            /View>
+                } </Text>
+        </View>
         );
     }
 }
