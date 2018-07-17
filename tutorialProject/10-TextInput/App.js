@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {Platform,
-  StyleSheet,
+import {Platform,StyleSheet,
   Text,
   View
 } from 'react-native';
